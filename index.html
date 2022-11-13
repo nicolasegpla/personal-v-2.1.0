@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--fuentes-->
+    <link rel="stylesheet" href="css/estyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Nicolas Garcia Frontend</title>
+</head>
+<header>
+    <section class="nav">
+        <h1 class="nav__title">Front-end</h1>
+        <ul class="nav__list ">
+            <li>Inicio</li>
+            <li>Acerca de mi</li>
+            <li>Proyectos</li>
+            <li>Contacto</li>
+        </ul>
+        <button class="container-button-dark-mode button-light">
+            <img class="container-button-dark-mode__sun" src="assets/icons/sun.svg" alt="">
+            <img    class="container-button-dark-mode__moon inactive" src="assets/icons/moon.svg" alt="">
+        </button>
+    </section>
+
+</header>
+<body>
+    <main>
+        <button class="container-hamburger">
+            <img class="container-hamburger__menu" src="assets/icons/hamburger.svg" alt="">
+        </button>
+
+
+        <section class="inicio">
+            <div class="container-home">
+                <img class="container-home__img-home" src="assets/img/img-home.png" alt="">
+            </div>
+            <div class="container-home-info">
+                <article class="container-info__text">
+                    <p class="container-info__text__profession">Front-end Developer</p>
+                    <h1 class="container-info__text__title">Hola!, Soy Nicolas.</h1>
+                    <p class="container-info__text__info">Desarrollador Web, especificamente en el desarrollo Front-end, usando como lenguaje de programacion,  JavaScript.</p>
+                </article>
+                <article class="container-info__buttons">
+                    <button class="container-info__buttons__primary"><img class="github-icon" src="assets/icons/github.svg" alt=""><img class="inactive github-dark" src="assets/icons/github-dark.svg" alt=""> GitHub</button>
+                    <div class="container-info__buttons__link">Conocer Mas <img class="arrow-dark" src="assets/icons/arrow.svg" alt="">
+                    <img class="inactive arrow-dark2" src="assets/icons/arrow-dark.svg" alt=""></div>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+<script src="src/node.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>

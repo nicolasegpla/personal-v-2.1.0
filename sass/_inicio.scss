@@ -1,0 +1,102 @@
+@use 'global';
+
+.inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+//imagen del inicio
+
+.container-home {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 31rem;
+    &__img-home {
+        width: 100%;
+        animation: saltar 4s  ease infinite;
+    }
+    @keyframes saltar {
+        0%{
+            transform: translatey(0);
+        }
+        50%{
+            transform: translatey(3rem);
+        }
+        100%{
+            transform: translatey(0);
+        }
+    }   
+}
+
+//informacion inicio
+
+.container-home-info {
+    width: 100%;
+    min-width: 31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-info__text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__profession {
+        font-size: global.$font-size-text;
+        font-weight: bold;
+        color: global.$second-color;
+    }
+    &__title {
+        font-size: global.$font-size-title;
+        margin-top: -1rem;
+    }
+    &__info {
+        font-size: global.$font-size-text;
+        font-weight: 500;
+        text-align: center;
+        margin-top: -1.4rem;
+    }
+
+}
+.container-info__buttons {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__primary {
+        width: 16rem;
+        margin-top: 1.5rem;
+        height: 3.5rem;
+        font-family: global.$font;
+        font-size: global.$font-size-button-links;
+        font-weight: 500;
+        border: none;
+        border-radius: 1rem;
+        color: global.$withe-color;
+        background-color: global.$primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 1rem;
+        text-decoration: none;
+        font-size: global.$font-size-button-links;
+        font-weight: 600;
+        color: global.$second-color;
+        cursor: pointer;
+    }
+}
+

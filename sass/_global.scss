@@ -1,0 +1,47 @@
+$font:  'Dosis', sans-serif;
+$font-size-title: 3rem;
+$font-size-text: 1.8rem;
+$font-size-button-links: 1.6rem;
+$primary-color: #000;
+$second-color: #880788;
+$withe-color: #fff;
+$dark-second-color: #00ffff;
+
+$breackpoints: (
+    sm: 767px,
+    md: 1023px,
+    lg: 1024px,
+
+);
+@mixin media-up($breackpoint) {
+    @media screen and (max-width: map-get($breackpoints, $breackpoint)) {
+        @content;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    font-size: 1.5rem;
+}
+main {
+    position: relative;
+}
+.inactive {
+    display: none;
+}
+.dark-mode {
+    background-color: $primary-color;
+    color: $withe-color;
+}
+.button-dark{
+    background-color: $withe-color;
+}
+.button-light{
+    background-color: $primary-color;
+}

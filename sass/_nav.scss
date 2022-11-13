@@ -1,0 +1,40 @@
+@use 'global';
+
+
+.nav {
+    width: 100%;
+    min-width: 31rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    &__title {
+        font-size: global.$font-size-title;
+        padding-left: 4rem;
+        cursor: pointer;
+    }
+    &__list {
+        width: 60%;
+        font-size: global.$font-size-button-links;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        gap: 2.4rem;
+        cursor: pointer;
+        @include global.media-up(sm) {
+            display: none;
+       }    
+    }
+}
+.container-button-dark-mode {
+    width: 40px;
+    height: 40px;
+    margin-right: 4rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+
